@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import CustomDenseAppBar from './NavigationBar';
+import ButtonAppBar from './NavigationBar';
 import ReactDOM from 'react-dom';
 
-export default class Example extends Component {
+export default class Landing extends Component {
     render() {
         return (
             <div className="container-fluid">
                 <div className="row justify-content-center">
-                    <CustomDenseAppBar>
-                        Administrator
-                    </CustomDenseAppBar>
+                    <ButtonAppBar/>
                 </div>
             </div>
         );
@@ -17,5 +15,5 @@ export default class Example extends Component {
 }
 
 if (document.getElementById('example')) {
-    ReactDOM.render(<Example />, document.getElementById('example'));
+    ReactDOM.render(<Landing />, document.getElementById('example'));
 }
