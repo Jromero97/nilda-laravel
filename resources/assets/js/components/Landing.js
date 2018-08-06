@@ -1,19 +1,10 @@
-import React, { Component } from 'react';
-import ButtonAppBar from './NavigationBar';
-import ReactDOM from 'react-dom';
+import React, {Component} from 'react';
+import LandingButtonAppBar from './NavigationBar';
 
-export default class Landing extends Component {
+class Landing extends Component {
     render() {
-        return (
-            <div className="container-fluid">
-                <div className="row justify-content-center">
-                    <ButtonAppBar/>
-                </div>
-            </div>
-        );
+        return <LandingButtonAppBar/>
     }
 }
 
-if (document.getElementById('example')) {
-    ReactDOM.render(<Landing />, document.getElementById('example'));
-}
+export default Landing;

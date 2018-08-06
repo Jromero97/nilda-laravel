@@ -19,26 +19,23 @@ const styles = {
     },
 };
 
-const LandingButtonAppBar = props => {
+const DashboardButtonAppBar = props => {
     const { classes } = props;
-    return(
+    return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position='static'>
                 <Toolbar>
-                    <Typography variant="title" color="inherit" className={classes.flex}>
-                        Hospital Landing
-                    </Typography>
-                    <Button color="inherit">Dashboard</Button>
+                    <Typography variant='title' color='inherit' className={classes.flex}>Dashboard</Typography>
+                    <Button color='inherit' href='/login'>Login</Button>
+                    <Button color='inherit'>Register</Button>
                 </Toolbar>
             </AppBar>
         </div>
     )
 };
 
-LandingButtonAppBar.propTypes = {
+DashboardButtonAppBar.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-
-
-export default withStyles(styles)(LandingButtonAppBar);
+export default withStyles(styles)(DashboardButtonAppBar);

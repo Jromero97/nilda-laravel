@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/login', function () {
+   return view('welcome');
+});
+
+Route::get('/home', function () {
+    return view('welcome');
+});
